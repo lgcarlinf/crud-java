@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DB_URL=
+      - DB_USER=
+      - DB_PASSWORD=
+    ports:
+      - "8080:8080"
